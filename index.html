@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TradingView 4 Mini Charts</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;           /* 전체 여백 제거 */
+      display: flex;
+      gap: 1px;             /* 차트 사이 최소 간격 */
+      overflow-x: auto;      /* 가로 스크롤 허용 */
+      white-space: nowrap;   /* 무조건 가로 1줄 배치 */
+    }
+    .chart {
+      flex: 0 0 195px;      /* 차트 너비 약간 줄임 */
+      height: 195px;        /* 높이 약간 줄임 */
+    }
+  </style>
+</head>
+<body>
+  <!-- NDX -->
+  <div class="chart" id="chart1"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+    "symbol": "NASDAQ:NDX",
+    "width": "100%",
+    "height": "100%",
+    "autosize": true,
+    "colorTheme": "light",
+    "locale": "en"
+  }
+  </script>
+
+  <!-- SPX500USD -->
+  <div class="chart" id="chart2"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+    "symbol": "OANDA:SPX500USD",
+    "width": "100%",
+    "height": "100%",
+    "autosize": true,
+    "colorTheme": "light",
+    "locale": "en"
+  }
+  </script>
+
+  <!-- BTCUSD -->
+  <div class="chart" id="chart3"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+    "symbol": "INDEX:BTCUSD",
+    "width": "100%",
+    "height": "100%",
+    "autosize": true,
+    "colorTheme": "light",
+    "locale": "en"
+  }
+  </script>
+
+  <!-- USDKRW -->
+  <div class="chart" id="chart4"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+    "symbol": "FX_IDC:USDKRW",
+    "width": "100%",
+    "height": "100%",
+    "autosize": true,
+    "colorTheme": "light",
+    "locale": "en"
+  }
+  </script>
+</body>
+</html>
